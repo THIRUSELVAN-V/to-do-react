@@ -1,38 +1,85 @@
+
 .App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0606;
+  color: #ebe5e5;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hs{
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  width: 60%;
+  font-size: 16px;
+  background-color: #cecbcb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  padding: 12px 24px ;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: #474c52;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ced0d2;
+  color: #474c52;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  background-color: #0c0606;
+  padding-bottom: 35%;
+}
+
+li {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #848080;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  color: rgb(0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+li:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button.edit {
+  background-color: #ffc107;
+  margin-left: 10px;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.complete {
+  background-color: #28a745;
 }
